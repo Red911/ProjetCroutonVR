@@ -1,0 +1,127 @@
+Begin Object Class=/Script/Engine.Material Name="M_ProgressBar" ExportPath="/Script/Engine.Material'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="M_ProgressBarEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:M_ProgressBarEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_1" ExportPath="/Script/Engine.MaterialExpressionClamp'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionClamp_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionConstant3Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionConstant3Vector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionOneMinus_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSmoothStep Name="MaterialExpressionSmoothStep_0" ExportPath="/Script/Engine.MaterialExpressionSmoothStep'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionSmoothStep_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Name="M_ProgressBarEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:M_ProgressBarEditorOnlyData'"
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_ProgressBar:MaterialExpressionLinearInterpolate_0'")
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionLinearInterpolate'M_ProgressBar:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionSmoothStep'M_ProgressBar:MaterialExpressionSmoothStep_0'","/Script/Engine.MaterialExpressionTextureCoordinate'M_ProgressBar:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionComponentMask'M_ProgressBar:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionScalarParameter'M_ProgressBar:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'M_ProgressBar:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAdd'M_ProgressBar:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionConstant3Vector'M_ProgressBar:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionOneMinus'M_ProgressBar:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionConstant3Vector'M_ProgressBar:MaterialExpressionConstant3Vector_1'","/Script/Engine.MaterialExpressionClamp'M_ProgressBar:MaterialExpressionClamp_1'"))
+      ParameterGroupData(0)=(GroupName="None")
+      ParameterGroupData(1)=(GroupName="None")
+      ParameterGroupData(2)=(GroupName="None")
+      ParameterGroupData(3)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionAdd_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_ProgressBar:MaterialExpressionScalarParameter_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_ProgressBar:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=-834
+      MaterialExpressionEditorY=-32
+      MaterialExpressionGuid=9CBCE951451F6F67C1EE6EAC403E485F
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionClamp_1" ExportPath="/Script/Engine.MaterialExpressionClamp'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionClamp_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionSmoothStep'M_ProgressBar:MaterialExpressionSmoothStep_0'")
+      MaterialExpressionEditorX=-311
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=FE40EBF4469967FEDDC36AAA57EE81ED
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_ProgressBar:MaterialExpressionTextureCoordinate_0'")
+      G=True
+      MaterialExpressionEditorX=-1079
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=5BCAAA1247E41913D35EEB9A933F2659
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionConstant3Vector_0'"
+      Constant=(R=0.000000,G=0.789000,B=0.042901,A=1.000000)
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=-464
+      MaterialExpressionGuid=4B425DA24C40E9092674349AC35E33B6
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionConstant3Vector_1'"
+      Constant=(R=0.730461,G=0.010330,B=0.010330,A=1.000000)
+      MaterialExpressionEditorX=-408
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=87C71E6D41A996C7F5475EB0DC4DCAAA
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionLinearInterpolate_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'M_ProgressBar:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'M_ProgressBar:MaterialExpressionConstant3Vector_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression="/Script/Engine.MaterialExpressionClamp'M_ProgressBar:MaterialExpressionClamp_1'")
+      MaterialExpressionEditorX=160
+      MaterialExpressionGuid=A7D9A9EC462A3DD1740DF29924C6859E
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionOneMinus_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_ProgressBar:MaterialExpressionComponentMask_0'")
+      MaterialExpressionEditorX=-829
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=BC33EB1940374C4B467E1FB5BDB45D87
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionScalarParameter_0'"
+      DefaultValue=-0.500000
+      ParameterName="Distance"
+      ExpressionGUID=9EEF87FB46E6305E03C22480AC9CB5F6
+      MaterialExpressionEditorX=-1118
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=5ED1B54C48C584C5A30C0F9355A4F266
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionScalarParameter_1'"
+      DefaultValue=1.500000
+      ParameterName="Contraste"
+      ExpressionGUID=FA33329041F80353613AC1A15A490F81
+      MaterialExpressionEditorX=-1115
+      MaterialExpressionEditorY=-160
+      MaterialExpressionGuid=97E5DBC84780FE8035F6CEAC48BAFD93
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionSmoothStep_0" ExportPath="/Script/Engine.MaterialExpressionSmoothStep'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionSmoothStep_0'"
+      Min=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_ProgressBar:MaterialExpressionScalarParameter_0'")
+      Max=(Expression="/Script/Engine.MaterialExpressionAdd'M_ProgressBar:MaterialExpressionAdd_0'")
+      Value=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_ProgressBar:MaterialExpressionOneMinus_0'")
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=B91B320B424AFDE47FBE8597257ECD31
+      Material="/Script/Engine.Material'M_ProgressBar'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/Art/Material/UI/M_ProgressBar.M_ProgressBar:MaterialExpressionTextureCoordinate_0'"
+      MaterialExpressionEditorX=-1440
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=6F8B6831430AC9D35E62E0B90EC3FFC4
+      Material="/Script/Engine.Material'M_ProgressBar'"
+      bCollapsed=False
+   End Object
+   MaterialDomain=MD_UI
+   EditorX=368
+   bCanMaskedBeAssumedOpaque=True
+   StateId=23328DB64A804A996A97D0BCB99743B4
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_ProgressBarEditorOnlyData'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=17C53A7146732081850C3EADA9B908A9
+End Object
